@@ -1,7 +1,20 @@
+var url = window.location.href;
+var swLocation = '/Twittor/sw.js';
+
+if( navigator.serviceWorker ){
+    
+    if(url.includes('localhost')){
+        
+        swLocation = '/sw.js';
+    }
+    
+    navigator.serviceWorker.register('/sw.js');
+}
+
 // Registrar Service Worker
 if( navigator.serviceWorker ){
     
-    navigator.serviceWorker.register('/sw.js');    
+    navigator.serviceWorker.register( swLocation );    
 }
 
 

@@ -9,7 +9,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 // APP SHELL: Contendrá todo lo requerido de la página
 const APP_SHELL = [
-    '/',
+    //'/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
